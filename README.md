@@ -6,11 +6,12 @@ This project is a Django REST Framework application that recommends the most sui
 
 The recommendation is based on:
 
-1. Product dimensions
-2. Product weight
-3. Box dimensions
-4. Box weight capacity
-5. Box cost
+<<<<<<< HEAD
+- Product dimensions
+- Product weight
+- Box dimensions
+- Box weight capacity
+- Box cost
 
 The system selects the lowest-cost box that can accommodate the order.
 
@@ -153,6 +154,7 @@ For each order, the system:
 
 If no suitable box is found, the system returns a message indicating that no box is available.
 
+<<<<<<< HEAD
 ---
 
 ## Running Tests
@@ -179,18 +181,95 @@ OK
 
 ## Project Structure
 
-```text
-AI-Assisted-box-selection-system/
+<<<<<<< HEAD
 
-├── products/
-├── boxes/
-├── orders/
-├── services/
-│   └── box_selector.py
-├── config/
-├── README.md
-├── AI_USAGE.md
-├── TEST_OUTPUT.md
-├── requirements.txt
-└── manage.py
+---
+
+## Important
+
+After editing, your README **must not contain** any of these:
+
+```text
+<<<<<<< HEAD
+=======
+>>>>>>>
 ```
+
+Search the entire file and remove all conflict markers.
+
+---
+
+## Save the file
+
+Then run:
+
+```bash
+git add README.md
+```
+
+Continue the rebase:
+
+```bash
+git rebase --continue
+```
+
+If Git opens an editor:
+
+### In VS Code
+
+Save and close the file.
+
+### In terminal Vim editor
+
+Press:
+
+```text
+Esc
+```
+
+then type:
+
+```text
+:wq
+```
+
+and press Enter.
+
+---
+
+## After Rebase Completes
+
+Push:
+
+```bash
+git push
+```
+
+---
+
+## Verify
+
+Run:
+
+```bash
+git status
+```
+
+Expected:
+
+```text
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
+
+### If `git rebase --continue` gives another conflict
+
+Run:
+
+```bash
+git status
+```
+
+and paste the output. I'll tell you exactly which file to fix next and what commands to run.
