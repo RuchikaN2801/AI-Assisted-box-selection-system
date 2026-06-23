@@ -252,8 +252,8 @@ AI-Assisted-box-selection-system/
 ├── screenshots/
 ├── config/
 ├── README.md
-├── AI_USAGE.md
-├── TEST_OUTPUT.md
+├── AI_usage.md
+├── test_output.md
 ├── requirements.txt
 └── manage.py
 ```
